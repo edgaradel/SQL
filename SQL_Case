@@ -1,0 +1,5 @@
+SELECT
+[dbo].[names_raw].[permno],
+max([dbo].[names_raw].[date_data_pulled]) as latest_date
+FROM [dbo].[names_raw]
+GROUP BY [dbo].[names_raw].[permno];
